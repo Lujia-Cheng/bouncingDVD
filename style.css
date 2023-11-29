@@ -1,0 +1,23 @@
+div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  background-color: black;
+  animation: horizontal 2.9s linear infinite alternate,
+    vertical 3.9s linear infinite alternate;
+}
+@keyframes horizontal {
+  to {
+    left: calc(100vw - 300px);
+  }
+}
+@keyframes vertical {
+  to {
+    top: calc(100vh - 200px);
+  }
+}
